@@ -1,0 +1,301 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+ 
+ <head>
+ <title>Compras</title>
+ <LINK REL=StyleSheet HREF="CSS/bootstrap.css" TYPE="text/css" MEDIA=screen>
+ <LINK REL=StyleSheet HREF="estilosCSS1.css" TYPE="text/css" MEDIA=screen>
+<LINK REL=StyleSheet HREF="CSS/estilosCSS1.css" TYPE="text/css" MEDIA=screen>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,700;1,300&display=swap" rel="stylesheet">
+ <!--lee codigo javascript-->
+ <script type="text/javascript" src="js/javascript.js"></script>
+ 
+ <!--lee codigo css-->
+ 
+ 
+ </head> 
+ 
+ <body>
+	<header>
+		<div class="container">
+			<h1>Portal de Compras </h1>
+            <h2>Factsoft D Soluciones Informáticas</h2>
+		</div>
+	</header>
+    
+
+	
+​<div class="container">
+	<p>Factsoft D Soluciones Informáticas te ofrece la facilidad de hacer tus compras y pagos de manera segura y a sólo un clic  </p>
+ <div id="todo" class="todoNo">
+ <div id="menu" class="menuNo">
+ 
+ 
+ <!--Producto del 1 al 9-->
+ <div id="div1" name="DIVS"></div>
+ <div id="div2" name="DIVS"></div>
+ <div id="div3" name="DIVS"></div>
+ <div id="div4" name="DIVS"></div>
+ <div id="div5" name="DIVS"></div>
+ <div id="div6" name="DIVS"></div>
+ <div id="div7" name="DIVS"></div>
+ <div id="div8" name="DIVS"></div>
+ <div id="div9" name="DIVS"></div>
+ 
+ 
+ <!--Botones de compra-->
+ <div id="divbotones">
+ <input type="button" id="botonTotal" value="Calcular total"/>
+ <input type="button" id="botonDatos" value="Datos personales" disabled="disabled"/>
+ <input type="button" id="botonPago" value="Pago" disabled="disabled"/>
+ <input type="button" id="botonConfirmar" value="Confirmar pedido" disabled="disabled"/>
+ </div>
+ 
+ 
+ <!--zona de compra, tablas, formularios, etc.-->
+ <div id="divZonaCompra" class="divZonaCompraNo">
+ 
+ 
+ <!--Carrito de la compra-->
+ <div id="divTotal" class="divsNo">
+ <p><b>portal de compras</b></p>
+ <table id="tablaTotal"></table>
+ </div>
+ 
+ 
+ <!--Datos personales--> 
+ <div id="divDatos" class="divsNo">
+ <p><b>Introduzca sus datos personales:</b></p>
+ 
+ <div id="divDatosPersonales0">
+ <div id="divDatosPersonales1">
+ <label>Nombre completo:</label><br/>
+ <input type="text" id="nombre" value="" size="26" /><br/>
+ 
+ 
+ <label>CC:</label><br/>
+ <input type="text" id="dni" value="" size="8" maxlength="9" /><br/>
+ 
+ 
+ <label>Fecha de nacimiento:</label><br/>
+ <select id="fechaNacimientoDia">
+ <option value=""> dia </option>
+ </select>
+ <select id="fechaNacimientoMes">
+ <option value="">      mes</option>
+ <option value="1">Enero</option>
+ <option value="2">Febrero</option>
+ <option value="3">Marzo</option>
+ <option value="4">Abril</option>
+ <option value="5">Mayo</option>
+ <option value="6">Junio</option>
+ <option value="7">Julio</option>
+ <option value="8">Agosto</option>
+ <option value="9">Septiembre</option>
+ <option value="10">Octubre</option>
+ <option value="11">Noviembre</option>
+ <option value="12">Diciembre</option>
+ </select> 
+ <select id="fechaNacimientoAnio">
+ <option value="">  año </option>
+ </select><br/>
+ </div>
+ 
+ <div id="divDatosPersonales2">
+ <label>Telefono movil:</label><br/>
+ <input type="text" id="movil" value="" size="8" maxlength="9"/><br/>
+ 
+ <label>Email:</label><br/>
+ <input type="email" id="email1" value="" size="25" /><br/>
+ 
+ <label>Confirme el email:</label><br/>
+ <input type="email" id="email2" value="" size="25" /> 
+ </div>
+ </div>
+ 
+ 
+ <div id="divDomicilio">
+ <label>Tipo de via:</label>
+ <select id="tipoDeVia">
+ <option value="Avenida">Avenida</option>
+ <option value="Calle"selected="selected">Calle</option>
+ <option value="Camino">Camino</option>
+ <option value="Carretera">Carretera</option>
+ <option value="Pasaje">Carrera</option>
+ <option value="Plaza">Plaza</option>
+ <option value="Residencia">Transversal</option>
+ <option value="Ronda">Diagonal</option>
+ <option value="Travesia">Circular</option>
+ <option value="Urbanizacion">Urbanizacion</option>
+ </select>     
+ 
+ <label>Nombre via:</label>
+ <input type="text" id="viaNombre" value="" size="20" /><br/>
+ 
+ <label>Nº/km:</label>
+ <input type="text" id="viaNumero" value="" size="2" />  
+ 
+ <label>Bloque:</label>
+ <input type="text" id="viaBloque" value="" size="2" />         
+ 
+ <label>Escalera:</label>
+ <input type="text" id="viaEscalera" value="" size="2" />  
+ 
+ <label>Piso:</label>
+ <input type="text" id="viaPiso" value="" size="2" /><br/>
+ 
+ 
+ <label>Ciudad o Municipio:</label>
+ <input type="text" id="localidad" value="" size="13"/>  
+ 
+ <label>Codigo Postal:</label>
+ <input type="text" id="codigoPostal" value="" size="5" maxlength="5"/>  
+ 
+ <label>Departamento:</label>
+ <select id="departamento">
+ <option value="">          Departamento</option>
+ <option value="91">Amazonas</option>
+ <option value="05">Antioquia</option>
+ <option value="81">Arauca</option>
+ <option value="08">Atlántico</option>
+ <option value="13">Bolívar</option>
+ <option value="15">Boyacá</option>
+ <option value="17">Caldas</option>
+ <option value="18">Caquetá</option>
+ <option value="85">Casanare</option>
+ <option value="19">Cauca</option>
+ <option value="20">Cesar</option>
+ <option value="27">Chocó</option>
+ <option value="23">Córdoba</option>
+ <option value="25">Cundinamarca</option>
+ <option value="11">Distrito Capital</option>
+ <option value="94">Guainía</option>
+ <option value="95">Guaviare</option>
+ <option value="41">Huila</option>
+ <option value="44">La Guajira</option>
+ <option value="47">Magdalena</option>
+ <option value="50">Meta</option>
+ <option value="52">Nariño</option>
+ <option value="54">Norte de Santander</option>
+ <option value="86">Putumayo</option>
+ <option value="63">Quindío</option>
+ <option value="66">Risaralda</option>
+ <option value="88">San Andrés y providencia</option>
+ <option value="68">Santander</option>
+ <option value="70">Sucre</option>
+ <option value="73">Tolima</option>
+ <option value="76">Valle</option>
+ <option value="97">Vaupés</option>
+ <option value="99">Vichada</option>
+ 
+ </select>
+ </div> 
+ </div> 
+ 
+ 
+ <!--Datos de pago-->
+ <div id="divPago" class="divsNo">
+ <p><b>Introduzca los datos de la tarjeta de credito/debito donde se cargara el cobro:</b></p>
+ 
+ 
+ <label>Titular de la tarjeta:</label><br/>
+ <input type="text" id="titular" value="" size="26" /><br/>
+ 
+ 
+ <div id="metodosDePago">
+ <label><span  id="alertTipoDeTarjeta">Tipo de tarjeta:</span></label><br/>
+ <label for="visa">
+ <input type="radio" id="visa" name="tarjetas" class="logoTarjetas" value="Visa">
+ <img src="img/pago/visa.gif"></img>
+ </label>
+   
+ <label for="masterCard">
+ <input type="radio" id="masterCard" name="tarjetas" class="logoTarjetas" value="MasterCard">
+ <img src="img/pago/mastercard.gif"></img>
+ </label>
+   
+ <label for="amex">
+ <input type="radio" id="amex" name="tarjetas" class="logoTarjetas" value="American Express">
+ <img src="img/pago/amex.gif"></img>
+ </label>
+   
+ <label for="aurora">
+ <input type="radio" id="aurora" name="tarjetas" class="logoTarjetas" value="Aurora">
+ <img src="img/pago/aurora.gif"></img>
+ </label>
+ 
+ </div>
+ 
+ 
+ <div id="divNumeroTarjeta">
+ <label>Número tarjeta y CCV:</label><br/>
+ <input type="text" id="numeroTarjeta" value="" size="15" maxlength="16" />
+ <input type="text" id="cvcTarjeta" value="" size="2" maxlength="3" /><br/>
+ 
+ 
+ <select id="mesTarjeta">
+ <option value="">  mes </option>
+ </select>
+ 
+ <select id="anioTarjeta">
+ <option value="">  año </option>
+ </select>
+ </div>
+ </div> 
+ </div>
+ </div> 
+ </div>
+</div>
+
+	
+ 
+ <footer id="contacto"> 
+	<div class="container">          
+		<div class="contenedor-footer-content">
+			<div class="contac-us">
+				<h2 class="brand">Factsoft D</h2>
+				<p>Somos expertos en soluciones informáticas</p>
+			</div>
+			<div class="social-media">
+				<a href="https://www.facebook.com/Factsoft-D-Soluciones-Inform%C3%A1ticas-100776701450129" target="blank" class="social-media-icon">
+					<i class='bx bxl-facebook-circle'></i>  
+				</a>
+	
+				<a href="https://www.instagram.com/?hl=es-la" target="blank" class="social-media-icon">
+					<i class='bx bxl-instagram'></i> 
+				</a>
+	
+				<a href="./" class="social-media-icon">
+					<i class='bx bxl-twitter' ></i>  
+				</a>
+	
+				<a href=https://www.youtube.com/channel/UCG470Y3lnaZqNWGlYRwm0nw/videos target="_blank" class="social-media-icon">
+					<i class='bx bxl-youtube' ></i> 
+				</a>
+	
+				<a href="https://api.whatsapp.com/send?phone=3058801125" target="blank" class="social-media-icon">
+					<i class='bx bxl-whatsapp'></i>
+				</a>
+	
+				<a href="Index.html" class="social-media-icon"> Volver
+					<i class=''></i>
+					
+				</a>
+			</div>
+		
+	   </div>
+	</div> 
+	   
+	   <div class="line"></div>
+	   <p class="abajo">Copyright &copy; 2021 Factsoft D Soluciones informáticas. Derechos Reservados</p>
+	</footer>
+	
+	</body>
+	<script src="JS/jquery-3.6.0.min.js"></script>
+	<script src="JS/popper.min.js"></script>
+	<script src="JS/bootstrap.min.js"></script>
+	
+	</html>

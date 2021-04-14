@@ -1,0 +1,126 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de contacto</title>
+  <LINK REL=StyleSheet HREF="CSS/bootstrap.css" TYPE="text/css" MEDIA=screen>
+  <LINK REL=StyleSheet HREF="CSS/estilosCSS1.css" TYPE="text/css" MEDIA=screen>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,700;1,300&display=swap" rel="stylesheet">
+ 
+  
+  </head>
+
+
+<body>  
+  
+  <!-- formulario de contacto en html y css -->  
+
+  <div class="contact_form">
+
+    <div class="formulario">
+      <img src="Imagenes/logofact100x100.jpg" alt="">      
+      <h1>Formulario de contacto</h1>
+        <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+
+
+          <form action="submeter-formulario.php" method="post">       
+
+            
+                <p>
+                  <label for="nombre" class="colocar_nombre">Nombre
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                </p>
+              
+                <p>
+                  <label for="email" class="colocar_email">Email
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                </p>
+            
+                <p>
+                  <label for="telefone" class="colocar_telefono">Teléfono
+                  </label>
+                    <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                </p>    
+              
+                <p>
+                  <label for="website" class="colocar_website">Sitio web
+                  </label>
+                    <input type="url" name="introducir_website" id="website" placeholder="Escribe la URL de tu web">
+                </p>    
+              
+                <p>
+                  <label for="asunto" class="colocar_asunto">Asunto
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                </p>    
+              
+                <p>
+                  <label for="mensaje" class="colocar_mensaje">Mensaje
+                    <span class="obligatorio">*</span>
+                  </label>                     
+                                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                                </p>                    
+              
+                <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+
+                <p class="aviso">
+                  <span class="obligatorio"> * </span>los campos son obligatorios.
+                </p>          
+            
+          </form>
+    </div>  
+  </div>
+  <footer id="contacto"> 
+    <div class="container">          
+      <div class="contenedor-footer-content">
+        <div class="contac-us">
+          <h2 class="brand">Factsoft D</h2>
+          <p>Somos expertos en soluciones informáticas</p>
+        </div>
+        <div class="social-media">
+          <a href="https://www.facebook.com/Factsoft-D-Soluciones-Inform%C3%A1ticas-100776701450129" target="blank" class="social-media-icon">
+            <i class='bx bxl-facebook-circle'></i>  
+          </a>
+    
+          <a href="https://www.instagram.com/?hl=es-la" target="blank" class="social-media-icon">
+            <i class='bx bxl-instagram'></i> 
+          </a>
+    
+          <a href="./" class="social-media-icon">
+            <i class='bx bxl-twitter' ></i>  
+          </a>
+    
+          <a href=https://www.youtube.com/channel/UCG470Y3lnaZqNWGlYRwm0nw/videos target="_blank" class="social-media-icon">
+            <i class='bx bxl-youtube' ></i> 
+          </a>
+    
+          <a href="https://api.whatsapp.com/send?phone=3058801125" target="blank" class="social-media-icon">
+            <i class='bx bxl-whatsapp'></i>
+          </a>
+    
+          <a href="Index.html" class="social-media-icon"> Volver
+            <i class=''></i>              
+          </a>
+        </div>
+      
+       </div>
+    </div> 
+       
+       <div class="line"></div>
+       <p class="abajo">Copyright &copy; 2021 Factsoft D Soluciones informáticas. Derechos Reservados</p>
+    </footer>
+    
+    </body>
+    <script src="JS/jquery-3.6.0.min.js"></script>
+    <script src="JS/popper.min.js"></script>
+    <script src="JS/bootstrap.min.js"></script>
+    
+    </html>
