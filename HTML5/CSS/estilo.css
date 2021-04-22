@@ -97,6 +97,12 @@ header {
 /*header:hover .menu-navegacion{
     transform: translate(110%);
   }*/
+.container1 .video {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .spread {
   -webkit-transform: translate(0);
           transform: translate(0);
