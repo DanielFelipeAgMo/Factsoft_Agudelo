@@ -13,7 +13,6 @@
 	<title>Área clientes</title>
 	<LINK REL=StyleSheet HREF="CSS/bootstrap.css" TYPE="text/css" MEDIA=screen>
 	<LINK REL=StyleSheet HREF="CSS/estilo.css" TYPE="text/css" MEDIA=screen>
-	<LINK REL=StyleSheet HREF="CSS/estilosCSS1.css" TYPE="text/css" MEDIA=screen>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -23,12 +22,29 @@
 </head>
 
 <body>
-	<header>
-		<div class="container">
-			<h1>Clientes </h1>
-            <h2>Factsoft D Soluciones Informáticas</h2>
-		</div>
-	</header>
+	<header class="header" id="inicio">
+        <img src="Imagenes/svg/bx-menu.svg" alt="" class="hamburger">
+        <nav class="menu-navegacion">
+            <a class="busqueda" action="" method="">		    
+                  <input type="Buscar" placeholder="Buscar en este sitio...">		    	
+                  <button class="buscar">Buscar</button>
+            </a>
+            <a href="Index.html">Inicio</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="">Personas</a>
+            <ul class="submenu">
+               <li><a href="mapas.html">Mapas</a></li>
+               <li><a href="portalcompras.html">Compras</a></li>
+               <li><a href="area_clientes.html">Clientes</a></li>
+               <li><a href="trabaje_con_nosotros.html">Trabaje con Nosotros</a></li></ul>
+            <a href="formulario2.html">Buzón</a>
+        </nav>
+        <div class="contenedor_head">
+            <h1 class="titulo">Factsoft D</h1>
+            <p class="copy">Para nuestros clientes</p>
+        </div>
+    </header>
 
 	<div class="container">
 		<section class="main row">

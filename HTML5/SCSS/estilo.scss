@@ -1,7 +1,13 @@
-*{
-    padding:0;
+
+*{  
+  padding:0;
     margin:0;
   }
+  $gradiente-principal:linear-gradient(to top, rgba(49, 113, 240, 0.5),rgba(255, 0, 255, 0.5) 100%),url(../Imagenes/elegante/procreator.jpg );
+  $fuente-principal:'Noto Sans', sans-serif;
+  $colores_proyecto:(#9f8ad0,#667eea,#0000);
+  $medidas:(width:1000px, height:500px);
+
   :root{
     scroll-behavior: smooth;
   }
@@ -17,6 +23,11 @@
     margin: auto;
     padding: 60px 0;
   }
+  .definicion{
+    color: $colores_proyecto,1;
+    max-width: $medidas/3;
+
+  }
   header{
     height: 100vh;
     background:linear-gradient(to top, rgba(49, 113, 240, 0.5),rgba(255, 0, 255, 0.5) 100%),url(../Imagenes/elegante/pankaj.jpg);
@@ -25,6 +36,16 @@
     background-attachment: fixed;   
     background-position: center; 
   }
+  .contenedor_head{
+    background:$gradiente-principal;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .definicion{
+    color: ($colores_proyecto,3);
+  }
+  
   .head{
     text-align: center;
     padding: 0;
@@ -73,6 +94,7 @@
   .menu-navegacion a{
     color: #fff;
     text-decoration: none;
+    cursor: pointer;
   }
   .titulo{
     font-size: 60px;
